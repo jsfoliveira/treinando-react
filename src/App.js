@@ -1,7 +1,10 @@
 import React from 'react';
-import User from './nomeComMapjs';
+import User from './componentes/NomeComMap';
 import { joao, users } from './data/dados';
-import NomeSemMap from './nomeSemMap';
+import NomeSemMap from './componentes/NomeSemMap';
+import Pokedex from './componentes/Pokedex';
+import { Pokemon } from './componentes/Pokemon';
+import pokemon from './data/pokemon';
 
 class App extends React.Component {
   render() {
@@ -10,6 +13,8 @@ class App extends React.Component {
       <div>
         <NomeSemMap dados={ joao } />
         {users.map((user) => <User user={ user } />)}
+        <Pokedex />
+        {pokemon.map((pokemon) => <Pokemon pokemon={ pokemon } />)}
       </div>
     );
   }
