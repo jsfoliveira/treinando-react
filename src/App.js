@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
-import User from './componentes/NomeComMap';
+import User from './pages/NomeComMap';
 import { joao,  users } from './data/dados';
-import NomeSemMap from './componentes/NomeSemMap';
-import Pokedex from './componentes/Pokedex';
-import { Pokemon } from './componentes/Pokemon';
+import NomeSemMap from './pages/NomeSemMap';
+import Pokedex from './pages/Pokedex';
+import { Pokemon } from './pages/Pokemon';
 import pokemon from './data/pokemon';
-import { Form } from './componentes/Form';
+import { Form } from './pages/Form';
 
 class App extends React.Component {
   render() {
